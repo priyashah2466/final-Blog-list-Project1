@@ -1,0 +1,30 @@
+
+<br>
+<br>
+<br>
+
+<div  class="container" style="width: 60%;">
+
+  <form class="form-signin DistanceFromTop">
+    <p class="large material-icons" style="font-size: 50px">account_circle</p>
+    <h2 class="form-signin-heading">Please sign in</h2>
+
+    <label for="inputEmail" class="sr-only" style="margin-bottom: 20px;">User Name</label>
+
+    <input name="userEmail"type="email" id="inputEmail" class="form-control" #username
+           [(ngModel)]="model.username" placeholder="Email address" required autofocus><br>
+
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input name="userPassword" type="password" id="inputPassword" class="form-control"
+           placeholder="Password" #password
+           [(ngModel)]="model.password" required>
+    <br>
+    <br>
+
+
+    <button class="btn btn-lg btn-primary btn-block" (click)="login()">Sign in</button>
+  </form>
+
+</div>
+
+
